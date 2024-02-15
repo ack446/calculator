@@ -1,18 +1,13 @@
-'''My Calculator Test'''
 from calculator import Calculator
 
 def test_addition():
-    '''Test that addition function works '''    
-    assert Calculator.add(2,2) == 4
+    assert Calculator.add(3,2) == 5
 
 def test_subtraction():
-    '''Test that addition function works '''    
-    assert Calculator.subtract(2,2) == 0
+    assert Calculator.subtract(4,4) == 0
 
 def test_divide():
-    '''Test that division function works '''    
-    assert Calculator.divide(2,2) == 1
+    assert Calculator.divide(6,3) == 2
 
 def test_multiply():
-    '''Test that multiply function works '''    
-    assert Calculator.multiply(2,2) == 4
+    assert Calculator.multiply(3,3) == 9
