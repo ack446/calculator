@@ -3,14 +3,13 @@ import pytest
 from calculator.evaluation import Evaluation
 from calculator.operations import add, subtract, multiply, divide
 
-
 def test_operation_add():
     evaluation = Evaluation(Decimal('11'), Decimal('9'), add)
-    assert evaluation.perform() == Decimal('19'), "Add operation failed"
+    assert evaluation.perform() == Decimal('20'), "Add operation failed"
 
 def test_operation_subtract():
     evaluation = Evaluation(Decimal('5'), Decimal('5'), subtract)
-    assert evaluation.perform() == Decimal('1'), "Subtract operation failed"
+    assert evaluation.perform() == Decimal('0'), "Subtract operation failed"
 
 def test_operation_multiply():
     evaluation = Evaluation(Decimal('5'), Decimal('5'), multiply)
